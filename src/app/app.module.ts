@@ -1,20 +1,26 @@
+import { HomeComponent } from './app/home/home.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MenuModule } from 'primeng/menu';
+import { TabMenuModule } from 'primeng/tabmenu';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormComponent } from './app/form/form.component';
+import {InputTextModule} from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MenuModule,
+    TabMenuModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]
